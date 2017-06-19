@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +15,31 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+// Vue.component('example', require('./components/Example.vue'));
+//
+// const app = new Vue({
+//     el: '#app'
+// });
 
-const app = new Vue({
-    el: '#app'
+
+$(document).ready(function(){
+    let navigationFn = {
+        goToSection: function(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 0);
+        }
+    };
+
+    // $('#portGrid01').click(function(){
+    //     $('#portGrid01').removeClass('mix');
+    // });
+
+    $('.modal-dismiss').click(function(){
+        // $('#portfolio').click();
+        // window.location.href = '#portfolio';
+        location.reload();
+        // navigationFn.goToSection('#portfolio');
+        // $.scrollTo($("#portfolio"), { duration: 0});
+    });
 });

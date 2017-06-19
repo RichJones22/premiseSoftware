@@ -13,7 +13,7 @@ mix
         './resources/assets/vendor/bootstrap/js/bootstrap.min.js',
         './resources/assets/vendor/jquery.easing/jquery.easing.min.js',
         './resources/assets/vendor/owl-carousel/owl.carousel.js',
-        './resources/assets/vendor/magnific-popup/jquery.magnific-popup.min.js',
+        // './resources/assets/vendor/magnific-popup/jquery.magnific-popup.min.js', // not using
         './resources/assets/vendor/vide/jquery.vide.min.js',
         './resources/assets/vendor/mixitup/mixitup.min.js',
         './resources/assets/vendor/wowjs/wow.min.js',
@@ -32,31 +32,32 @@ mix
             './resources/assets/vendor/owl-carousel/owl.carousel.css',
             './resources/assets/vendor/owl-carousel/owl.theme.css',
             './resources/assets/vendor/owl-carousel/owl.transitions.css',
-            './resources/assets/vendor/magnific-popup/mangnific-popup.css',
+            // './resources/assets/vendor/magnific-popup/mangnific-popup.css', not using
             './resources/assets/vendor/animated.css/animated.min.css',
             './resources/assets/vendor/bootstrap/css/bootstrap-grid.css',
             './resources/assets/vendor/bootstrap/css/bootstrap-reboot.css',
-            './resources/assets/vendor/device-mockups/device-mockups.min.css',
+            // './resources/assets/vendor/device-mockups/device-mockups.min.css', not using
             // *************************************************************************************************************
             // vitality specific css
             // - Custom styles for this theme
             // - Uncomment the color scheme you want to use! Red is chosen by default!
             // *************************************************************************************************************
             // './resources/assets/vendor/vitality/css/vitality-aqua.css',
-            // './resources/assets/vendor/vitality/css/vitality-blue.css',
+            './resources/assets/vendor/vitality/css/vitality-blue.css',
             // './resources/assets/vendor/vitality/css/vitality-green.css',
             // './resources/assets/vendor/vitality/css/vitality-orange.css',
             // './resources/assets/vendor/vitality/css/vitality-pink.css',
             // './resources/assets/vendor/vitality/css/vitality-purple.css',
-            './resources/assets/vendor/vitality/css/vitality-red.css',
+            // './resources/assets/vendor/vitality/css/vitality-red.css',
             // './resources/assets/vendor/vitality/css/vitality-tan.css',
             // './resources/assets/vendor/vitality/css/vitality-turquoise.css',
             // './resources/assets/vendor/vitality/css/vitality-yellow.css',
         ], 'public/css/vendor.css')
-    .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')
+    // .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
     .copy('./resources/assets/img/AustinSkyLine.png','public/img/AustinSkyLine.png')
     .copy('./resources/assets/img/ResumeImage-small.png','public/img/ResumeImage-small.png')
     .copy('./resources/assets/img/facebookPic-bigger.png','public/img/facebookPic-bigger.png')
     .copy('./resources/assets/img/poles-small.jpg','public/img/poles-small.jpg')
+    .copy('./resources/assets/img/ezslot-small.jpg','public/img/ezslot-small.jpg')
 ;
