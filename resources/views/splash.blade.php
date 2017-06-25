@@ -91,10 +91,10 @@
     <div class="container-fluid">
         <div class="wow fadeIn text-center">
             <h2>A little about myself... </h2>
-            <p class="mb-0">I'm a converted HP NonStop application developer turned open source full-stack web developer back in late 2014.<br/>
-                Basically, a 'who moved my cheese' kind of situation.  This did not come as a surprise to me, as I could see it coming,<br/>
+            <p class="mb-0">Prior <a href="https://en.wikipedia.org/wiki/NonStop_(server_computers)" target="_blank">HP NonStop</a> application developer turned lose as an open source full-stack web developer back in late 2014.<br/>
+                Basically, a <a href="https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F" target="_blank" >'who moved my cheese'</a> kind of situation.  This did not come as a surprise to me, as I could see it coming,<br/>
                 and as such started my search for new and interesting development work.  In 2015, I discovered Laravel and have been working with it ever since,<br/>
-                and am currently working at RateGenius in Austin as a full-stack Laravel developer.</p>
+                and am currently working at rateGenius.com in Austin Texas as a full-stack Laravel developer.</p>
         </div>
         <hr class="colored">
     </div>
@@ -119,14 +119,14 @@
         <hr class="colored">
         <div class="controls mt-3">
             <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter="all">All</button>
-            <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".identity">Projects</button>
-            <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".graphic">Patterns</button>
+            <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".project">Projects</button>
+            <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-filter=".design-pattern">Patterns</button>
         </div>
         <div class="portfolio-grid clearfix" id="portfolioList">
             <!-- Grid Item 1 -->
-            <div class="mix identity" href="#portfolioModal1" data-toggle="modal" id="portGrid01" title="Client Name">
+            <div class="mix project" href="#portfolioModal1" data-toggle="modal" id="portGrid01">
                 <div class="portfolio-wrapper">
-                    <img src="img/ezslot-small.jpg" alt="">
+                    <img src="img/ezslot-small.png" alt="">
                     <div class="caption">
                         <div class="caption-text">
                             <a class="text-title">Option Trading Site</a>
@@ -136,110 +136,71 @@
                     </div>
                 </div>
             </div>
-            {{--<!-- Grid Item 2 -->--}}
-            {{--<div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-2.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Web Development</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 3 -->--}}
-            {{--<div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-3.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Web Development</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 4 -->--}}
-            {{--<div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-4.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Brand Identity</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 5 -->--}}
-            {{--<div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-5.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Web Development</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 6 -->--}}
-            {{--<div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-6.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Graphic Design</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 7 -->--}}
-            {{--<div class="mix graphic" href="img/agency/portfolio/grid/grid-7.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-7.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Graphic Design</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 8 -->--}}
-            {{--<div class="mix web" href="img/agency/portfolio/grid/grid-8.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-8.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Web Development</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- Grid Item 9 -->--}}
-            {{--<div class="mix identity" href="img/agency/portfolio/grid/grid-9.jpg" title="Client Name">--}}
-                {{--<div class="portfolio-wrapper">--}}
-                    {{--<img src="img/agency/portfolio/grid/grid-9.jpg" alt="">--}}
-                    {{--<div class="caption">--}}
-                        {{--<div class="caption-text">--}}
-                            {{--<a class="text-title">Client Name</a>--}}
-                            {{--<span class="text-category">Brand Identity</span>--}}
-                        {{--</div>--}}
-                        {{--<div class="caption-bg"></div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <!-- Grid Item 5 -->
+            <div class="mix design-pattern" href="#portfolioModal5" data-toggle="modal" id="portGrid02">
+                <div class="portfolio-wrapper">
+                    <img src="img/design-pattern-background-small.png" alt="">
+                    <div class="caption">
+                        <div class="caption-text">
+                            <a class="text-title">Chain of Responsibility Design Pattern</a>
+                            <span class="text-category"></span>
+                        </div>
+                        <div class="caption-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid Item 3 -->
+            <div class="mix project" href="#portfolioModal3" data-toggle="modal" id="portGrid02">
+                <div class="portfolio-wrapper">
+                    <img src="img/photo-gallery-small.png" alt="">
+                    <div class="caption">
+                        <div class="caption-text">
+                            <a class="text-title">HTML tables Site</a>
+                            <span class="text-category"></span>
+                        </div>
+                        <div class="caption-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid Item 4 -->
+            <div class="mix project" href="#portfolioModal4" data-toggle="modal" id="portGrid02">
+                <div class="portfolio-wrapper">
+                    <img src="img/bullcreekdata-small.png" alt="">
+                    <div class="caption">
+                        <div class="caption-text">
+                            <a class="text-title">HTML tables Site</a>
+                            <span class="text-category"></span>
+                        </div>
+                        <div class="caption-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="mix project" href="#portfolioModal2" data-toggle="modal" id="portGrid02">
+                <div class="portfolio-wrapper">
+                    <img src="img/time-trax-small.png" alt="">
+                    <div class="caption">
+                        <div class="caption-text">
+                            <a class="text-title">HTML tables Site</a>
+                            <span class="text-category"></span>
+                        </div>
+                        <div class="caption-bg"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid Item 6 -->
+            <div class="mix design-pattern" href="#portfolioModal6" data-toggle="modal" id="portGrid02">
+                <div class="portfolio-wrapper">
+                    <img src="img/design-pattern-background-small.png" alt="">
+                    <div class="caption">
+                        <div class="caption-text">
+                            <a class="text-title">Strategy Design Pattern</a>
+                            <span class="text-category"></span>
+                        </div>
+                        <div class="caption-bg"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -299,28 +260,11 @@
     </div>
 </section>
 
-<!-- Block Button Call to Action -->
-{{--<a class="btn btn-block btn-full-width" href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3">Buy Vitality Now!</a>--}}
-
-{{--<style>--}}
-    {{--.ft-color {--}}
-        {{--color: #EF4035;--}}
-        {{--/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/--}}
-        {{--/*font-size: xx-large;*/--}}
-        {{--font-weight: bold;--}}
-        {{--/*background-color: #ffffff;*/--}}
-        {{--background-color: white;--}}
-        {{--border-radius: 50px;--}}
-        {{--opacity: 0.81;--}}
-    {{--}--}}
-{{--</style>--}}
-
-
 <!-- Footer -->
 <section class="footer" style="background: #888E9E; padding: 2rem;">
     <div class="container text-center">
         <div class="col-lg-12">
-            &copy; Copyright 2008-
+            &copy; Copyright 2008 -
             <script language="JavaScript" type="text/javascript">
                 let now = new Date;
                 theYear=now.getYear();
@@ -336,7 +280,7 @@
 
 <!-- Portfolio Modals -->
 <!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/ezslot-small.jpg')">
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/ezslot-small.png')">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal modal-dismiss" data-dismiss="modal">
@@ -349,44 +293,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <h2>Project Name</h2>
+                            <h2>Swing Low Option Trading</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="https://www.swinglowoptiontrading.com//" target="_blank" class="btn btn-lg btn-primary">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/ezslot" target="_blank" class="btn btn-lg btn-primary">Github</a>
+                            </p>
                         </div>
                         <div class="col-lg-8 offset-lg-2">
-                            {{--<div class="device-mockup macbook portrait black">--}}
-                                {{--<div class="device">--}}
-                                    {{--<div class="screen">--}}
-
-                                        {{--<!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->--}}
-                                        {{--<!-- <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt=""> -->--}}
-
-                                        {{--<!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->--}}
-                                        {{--<div class="mockup-carousel">--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-1b.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-1c.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                        {{--</div>--}}
-
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
                         </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                         <div class="col-lg-8 offset-lg-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong>Start Bootstrap</strong>
-                                </li>
-                                <li>Date: <strong>April 2017</strong>
-                                </li>
-                                <li>Service: <strong>Web Development</strong>
-                                </li>
-                            </ul>
                             <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -397,187 +322,214 @@
 </div>
 
 <!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
-{{--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">--}}
-    {{--<div class="modal-dialog">--}}
-        {{--<div class="modal-content">--}}
-            {{--<div class="close-modal" data-dismiss="modal">--}}
-                {{--<div class="lr">--}}
-                    {{--<div class="rl">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="modal-body">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<h2>Project Name</h2>--}}
-                            {{--<hr class="colored">--}}
-                            {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<div class="device-mockup macbook portrait black">--}}
-                                {{--<div class="device">--}}
-                                    {{--<div class="screen">--}}
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/time-trax-small.png')">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal modal-dismiss" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2>Swing Low Option Trading</h2>
+                            <hr class="colored">
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="http://www.premisesoftwaresolutions.com/timeCard/2015-11-09" target="_blank" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/TimeTrax" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                        {{--<!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->--}}
-                                        {{--<!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt=""> -->--}}
+<!-- Example Modal 3: Corresponds with Portfolio Carousel Item 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/photo-gallery-small.png')">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal modal-dismiss" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2>Swing Low Option Trading</h2>
+                            <hr class="colored">
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="http://photoGallery.premisesoftware.com" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/photo_gallery.git" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                        {{--<!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->--}}
-                                        {{--<div class="mockup-carousel">--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-2b.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-2c.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                        {{--</div>--}}
+<!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/bullcreekdata-small.png')">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal modal-dismiss" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2>Swing Low Option Trading</h2>
+                            <hr class="colored">
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="http://photoGallery.premisesoftware.com" target="_blank" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/photo_gallery.git" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<ul class="list-inline item-details">--}}
-                                {{--<li>Client: <strong>Start Bootstrap</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Date: <strong>April 2017</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Service: <strong>Web Development</strong>--}}
-                                {{--</li>--}}
-                            {{--</ul>--}}
-                            {{--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
+<!-- Example Modal 5: Corresponds with Portfolio Carousel Item 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/design-pattern-background-small.png')">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal modal-dismiss" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2>Swing Low Option Trading</h2>
+                            <hr class="colored">
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="http://photoGallery.premisesoftware.com" target="_blank" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/photo_gallery.git" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-{{--<!-- Example Modal 3: Corresponds with Portfolio Carousel Item 3 -->--}}
-{{--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">--}}
-    {{--<div class="modal-dialog">--}}
-        {{--<div class="modal-content">--}}
-            {{--<div class="close-modal" data-dismiss="modal">--}}
-                {{--<div class="lr">--}}
-                    {{--<div class="rl">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="modal-body">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<h2>Project Name</h2>--}}
-                            {{--<hr class="colored">--}}
-                            {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<div class="device-mockup macbook portrait black">--}}
-                                {{--<div class="device">--}}
-                                    {{--<div class="screen">--}}
-
-                                        {{--<!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->--}}
-                                        {{--<!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt=""> -->--}}
-
-                                        {{--<!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->--}}
-                                        {{--<div class="mockup-carousel">--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-3b.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                            {{--<div class="item">--}}
-                                                {{--<img src="img/agency/portfolio/carousel/screen-3c.jpg" class="img-fluid" alt="">--}}
-                                            {{--</div>--}}
-                                        {{--</div>--}}
-
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<ul class="list-inline item-details">--}}
-                                {{--<li>Client: <strong>Start Bootstrap</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Date: <strong>April 2017</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Service: <strong>Web Development</strong>--}}
-                                {{--</li>--}}
-                            {{--</ul>--}}
-                            {{--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
-{{--<!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->--}}
-{{--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">--}}
-    {{--<div class="modal-dialog">--}}
-        {{--<div class="modal-content">--}}
-            {{--<div class="close-modal" data-dismiss="modal">--}}
-                {{--<div class="lr">--}}
-                    {{--<div class="rl">--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="modal-body">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<h2>Project Name</h2>--}}
-                            {{--<hr class="colored">--}}
-                            {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<div class="device-mockup macbook portrait black">--}}
-                                {{--<div class="device">--}}
-                                    {{--<div class="screen">--}}
-
-                                        {{--<!-- Modal Mockup Option 1: Single Image (Example In Use Below) -->--}}
-                                        {{--<img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-fluid" alt="">--}}
-
-                                        {{--<!-- Modal Mockup Option 2: Carousel (Uncomment Below to Use) -->--}}
-                                        {{--<!-- <div class="mockup-carousel">--}}
-                                        {{--<div class="item">--}}
-                                            {{--<img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt="">--}}
-                                        {{--</div>--}}
-                                        {{--<div class="item">--}}
-                                            {{--<img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt="">--}}
-                                        {{--</div>--}}
-                                        {{--<div class="item">--}}
-                                            {{--<img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-fluid" alt="">--}}
-                                        {{--</div>--}}
-                                    {{--</div> -->--}}
-
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-lg-8 offset-lg-2">--}}
-                            {{--<ul class="list-inline item-details">--}}
-                                {{--<li>Client: <strong>Start Bootstrap</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Date: <strong>April 2017</strong>--}}
-                                {{--</li>--}}
-                                {{--<li>Service: <strong>Web Development</strong>--}}
-                                {{--</li>--}}
-                            {{--</ul>--}}
-                            {{--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
+<!-- Example Modal 6: Corresponds with Portfolio Carousel Item 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/design-pattern-background-small.png')">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal modal-dismiss" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2>Swing Low Option Trading</h2>
+                            <hr class="colored">
+                            <p>An application for managing the trades of options sellers.</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p class="lead">
+                                <a href="http://photoGallery.premisesoftware.com" target="_blank" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                &nbsp;
+                                <a href="https://github.com/RichJones22/photo_gallery.git" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-8 offset-lg-2">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="col-lg-8 offset-lg-2">
+                            <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="{{asset('js/vendor.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
