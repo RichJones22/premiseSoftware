@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-// window.Vue = require('vue');
+window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,30 +16,15 @@ require('./bootstrap');
  */
 
 // Vue.component('example', require('./components/Example.vue'));
-//
-// const app = new Vue({
-//     el: '#app'
-// });
+Vue.component('welcome-email', require('./components/app/email/welcomeEmail.vue'));
+
+new Vue({
+    el: '#app'
+});
 
 
+// global scope javascript; will be part of app.js
 $(document).ready(function(){
-    let navigationFn = {
-        goToSection: function(id) {
-            $('html, body').animate({
-                scrollTop: $(id).offset().top
-            }, 0);
-        }
-    };
-
-    // $('#portGrid01').click(function(){
-    //     $('#portGrid01').removeClass('mix');
-    // });
-
-    $('.modal-dismiss').click(function(){
-        // $('#portfolio').click();
-        // window.location.href = '#portfolio';
-        location.reload();
-        // navigationFn.goToSection('#portfolio');
-        // $.scrollTo($("#portfolio"), { duration: 0});
-    });
+    psNS.ps.utils.reloadMainNavBar();
+    psNS.ps.utils.timetraxVidModalClose();
 });

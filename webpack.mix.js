@@ -1,27 +1,41 @@
 let mix = require('laravel-mix');
 
-
 mix
-    .js('resources/assets/js/app.js', 'public/js')
+    // build app.js, which contains Node and Vue js code
+    .js([
+            'resources/assets/js/app.js'
+        ], 'public/js/app.js')
+    // combine app.js with all other none Node and none Vue js code.
+    // note: .scripts will work as well.
+    // note: - replace .combine with .babel if running 'npm run production' to minify; seems to work better
+    // note: - spNS.js needs to be the first file to combine/babel
+    .combine(
+        [
+            './resources/assets/vendor/premise-software/psNS.js',
+            './resources/assets/vendor/premise-software/psUtils.js',
+            'public/js/app.js',
+        ], 'public/js/app.js')
+    // .js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
-    .combine([
-        // *************************************************************************************************************
-        // vendor specific js
-        // *************************************************************************************************************
-        './resources/assets/vendor/jquery/jquery.min.js',
-        './resources/assets/vendor/tether/tether.min.js',
-        './resources/assets/vendor/bootstrap/js/bootstrap.min.js',
-        './resources/assets/vendor/jquery.easing/jquery.easing.min.js',
-        './resources/assets/vendor/owl-carousel/owl.carousel.js',
-        // './resources/assets/vendor/magnific-popup/jquery.magnific-popup.min.js', // not using
-        './resources/assets/vendor/vide/jquery.vide.min.js',
-        './resources/assets/vendor/mixitup/mixitup.min.js',
-        './resources/assets/vendor/wowjs/wow.min.js',
-        './resources/assets/vendor/js/contact_me.js',
-        './resources/assets/vendor/js/jqBootstrapValidation.js',
-        './resources/assets/vendor/js/vitality.js',
-        './resources/assets/vendor/js/vitality-mixitup.js',
-    ], 'public/js/vendor.js')
+    .combine(
+        [
+            // *************************************************************************************************************
+            // vendor specific js
+            // *************************************************************************************************************
+            './resources/assets/vendor/jquery/jquery.min.js',
+            './resources/assets/vendor/tether/tether.min.js',
+            './resources/assets/vendor/bootstrap/js/bootstrap.min.js',
+            './resources/assets/vendor/jquery.easing/jquery.easing.min.js',
+            './resources/assets/vendor/owl-carousel/owl.carousel.js',
+            // './resources/assets/vendor/magnific-popup/jquery.magnific-popup.min.js', // not using
+            './resources/assets/vendor/vide/jquery.vide.min.js',
+            './resources/assets/vendor/mixitup/mixitup.min.js',
+            './resources/assets/vendor/wowjs/wow.min.js',
+            './resources/assets/vendor/js/contact_me.js',
+            './resources/assets/vendor/js/jqBootstrapValidation.js',
+            './resources/assets/vendor/js/vitality.js',
+            './resources/assets/vendor/js/vitality-mixitup.js',
+        ], 'public/js/vendor.js')
     .combine(
         [
             // *************************************************************************************************************
@@ -64,4 +78,5 @@ mix
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
     .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
+    .copy('./resources/assets/mov/timetrax.mp4','public/mov/timetrax.mp4')
 ;

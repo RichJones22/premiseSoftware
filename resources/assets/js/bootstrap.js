@@ -7,9 +7,10 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
+
+// jquery and bootstrap are pulled in via the vendor.js as part of the vitality theme.
 try {
     // window.$ = window.jQuery = require('jquery');
-
     // require('bootstrap-sass');
 } catch (e) {}
 
