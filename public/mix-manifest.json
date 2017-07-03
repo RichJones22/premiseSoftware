@@ -1,7 +1,17 @@
 {
-  "/js/app.js": "/js/app.js",
-  "/css/app.css": "/css/app.css",
-  "/css/vendor.css": "/css/vendor.css",
-  "/css/vendor.js": "/css/vendor.js",
-  "/js/vendor.js": "/js/vendor.js"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/vendor.js": "/js/vendor.js",
+    "/css/vendor.css": "/css/vendor.css",
+    "/img/bg-header.jpg": "/img/bg-header.jpg",
+    "/img/AustinSkyLine.png": "/img/AustinSkyLine.png",
+    "/img/ResumeImage-small.png": "/img/ResumeImage-small.png",
+    "/img/facebookPic-bigger.png": "/img/facebookPic-bigger.png",
+    "/img/poles-small.jpg": "/img/poles-small.jpg",
+    "/img/ezslot-small.png": "/img/ezslot-small.png",
+    "/img/time-trax-small.png": "/img/time-trax-small.png",
+    "/img/photo-gallery-small.png": "/img/photo-gallery-small.png",
+    "/img/bullcreekdata-small.png": "/img/bullcreekdata-small.png",
+    "/img/design-pattern-background-small.png": "/img/design-pattern-background-small.png",
+    "/mov/timetrax.mp4": "/mov/timetrax.mp4"
 }
