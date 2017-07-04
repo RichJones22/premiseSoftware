@@ -15,13 +15,12 @@ mix
             './resources/assets/vendor/premise-software/psUtils.js',
             'public/js/app.js',
         ], 'public/js/app.js')
-    // .js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .combine(
         [
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             // vendor specific js
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             './resources/assets/vendor/jquery/jquery.min.js',
             './resources/assets/vendor/tether/tether.min.js',
             './resources/assets/vendor/bootstrap/js/bootstrap.min.js',
@@ -38,9 +37,9 @@ mix
         ], 'public/js/vendor.js')
     .combine(
         [
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             // vendor specific css
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             './resources/assets/vendor/bootstrap/css/bootstrap.min.css',
             './resources/assets/vendor/font-awesome/css/font-awesome.min.css',
             './resources/assets/vendor/owl-carousel/owl.carousel.css',
@@ -51,11 +50,11 @@ mix
             './resources/assets/vendor/bootstrap/css/bootstrap-grid.css',
             './resources/assets/vendor/bootstrap/css/bootstrap-reboot.css',
             // './resources/assets/vendor/device-mockups/device-mockups.min.css', not using
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             // vitality specific css
             // - Custom styles for this theme
             // - Uncomment the color scheme you want to use! Red is chosen by default!
-            // *************************************************************************************************************
+            // *********************************************************************************************************
             // './resources/assets/vendor/vitality/css/vitality-aqua.css',
             './resources/assets/vendor/vitality/css/vitality-blue.css',
             // './resources/assets/vendor/vitality/css/vitality-green.css',
@@ -78,5 +77,5 @@ mix
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
     .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
-    .copy('./resources/assets/mov/timetrax.mp4','public/mov/timetrax.mp4')
+    // .copy('./resources/assets/mov/timetrax.mp4','public/mov/timetrax.mp4')
 ;
