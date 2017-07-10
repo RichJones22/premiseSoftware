@@ -2,20 +2,20 @@
     <!-- Contact Section -->
     <div class="container wow fadeIn">
         <div class="text-center">
-            <h2>Contact Us</h2>
+            <h2>Send an email</h2>
             <hr class="colored">
-            <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
+            <p>Please reach out and say hello...</p>
         </div>
         <div class="row mt-4">
             <div class="col-lg-8 offset-lg-2">
                 <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
+                    <!--<div class="row control-group">-->
+                        <!--<div class="form-group col-12 floating-label-form-group controls">-->
+                            <!--<label>Name</label>-->
+                            <!--<input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">-->
+                            <!--<p class="help-block text-danger"></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Email Address</label>
@@ -23,13 +23,13 @@
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
+                    <!--<div class="row control-group">-->
+                        <!--<div class="form-group col-12 floating-label-form-group controls">-->
+                            <!--<label>Phone Number</label>-->
+                            <!--<input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">-->
+                            <!--<p class="help-block text-danger"></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Message</label>
