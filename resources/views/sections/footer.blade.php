@@ -11,7 +11,7 @@
                 }
                 document.write(theYear)
             </script>
-            Premise Software Solutions. All rights reserved.
+            Premise Software Solutions, Incorporated. All rights reserved.
         </div>
     </div>
 </section>

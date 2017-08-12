@@ -35,6 +35,7 @@ mix
             './resources/assets/vendor/js/vitality.js',
             './resources/assets/vendor/js/vitality-mixitup.js',
         ], 'public/js/vendor.js')
+    .sass('./node_modules/sweetalert2/src/sweetalert2.scss', 'public/css/vendor.css')
     .combine(
         [
             // *********************************************************************************************************
@@ -65,6 +66,7 @@ mix
             // './resources/assets/vendor/vitality/css/vitality-tan.css',
             // './resources/assets/vendor/vitality/css/vitality-turquoise.css',
             // './resources/assets/vendor/vitality/css/vitality-yellow.css',
+            'public/css/vendor.css'
         ], 'public/css/vendor.css')
     // .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')

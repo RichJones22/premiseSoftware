@@ -16,7 +16,7 @@ window.Vue = require('vue');
  */
 
 // Vue.component('example', require('./components/Example.vue'));
-Vue.component('welcome-email', require('./components/app/email/welcomeEmail.vue'));
+Vue.component('contact-us-email', require('./components/app/email/contactUsEmail.vue'));
 
 new Vue({
     el: '#app'

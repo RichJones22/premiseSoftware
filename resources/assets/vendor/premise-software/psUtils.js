@@ -31,5 +31,11 @@ psNS.ps.utils = {
         $("#portfolioModal2").on('show.bs.modal', function(){
             $("#timetraxVid").attr('src', url);
         });
+    },
+    isNotDefined: function (value) {
+        return typeof value === 'undefined';
+    },
+    isDefined: function(value) {
+        return psNS.ps.utils.isNotDefined(value) === false;
     }
 };

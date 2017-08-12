@@ -39,15 +39,15 @@
 
 <body id="page-top">
 
-<!-- site navigation -->
-@include('nav.topNav')
+    <!-- site navigation -->
+    @include('nav.topNav')
 
-<!-- page content -->
-@yield('content')
+    <!-- page content -->
+    @yield('content')
 
-<!-- site javascript -->
-<script src="{{asset('js/vendor.js')}}"></script>
-<script src="{{asset('js/app.js')}}"></script>
+    <!-- site javascript -->
+    <script src="{{asset('js/vendor.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 
 </body>
 
