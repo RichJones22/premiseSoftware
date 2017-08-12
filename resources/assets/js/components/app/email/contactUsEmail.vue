@@ -8,7 +8,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-lg-8 offset-lg-2">
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" id="contactForm">
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Email Address</label>
