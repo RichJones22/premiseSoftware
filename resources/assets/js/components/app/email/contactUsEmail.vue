@@ -12,7 +12,7 @@
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Email Address</label>
-                            <input v-model="email" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input v-model="email" type="email" class="form-control" placeholder="Email Address" id="email">
                         </div>
                     </div>
                     <div v-if="emailError" v-bind="emailError">
@@ -23,7 +23,7 @@
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Message</label>
-                            <textarea v-model="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <textarea v-model="message" rows="5" class="form-control" placeholder="Message" id="message"></textarea>
                         </div>
                     </div>
                     <div v-if="messageError" v-bind="messageError">
