@@ -156,7 +156,7 @@
                             <p>This technique ensures data consistency.</p>
                             <br/>
                             <p class="lead">
-                                <a href="http://www.premisesoftwaresolutions.com/timeCard/2015-11-09" target="_blank" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                <a href="http://www.premisesoftwaresolutions.com/timeCard/2015-11-09" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
                                 &nbsp;
                                 <a href="https://github.com/RichJones22/TimeTrax" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
                             </p>

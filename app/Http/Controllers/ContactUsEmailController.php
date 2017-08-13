@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactUsEmailRequest;
 use App\Mail\CorrespondenceEmail;
 use App\Mail\ReplyConfirmReceiptEmail;
 use Illuminate\Http\Request;
@@ -43,11 +44,11 @@ class ContactUsEmailController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param ContactUsEmailRequest $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function contactUsEmail(Request $request)
+    public function contactUsEmail(ContactUsEmailRequest $request)
     {
         // send reply to user
         $this->sendReplyEmail($request);

@@ -13,15 +13,23 @@
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Email Address</label>
                             <input v-model="email" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
                         </div>
+                    </div>
+                    <div v-if="emailError" v-bind="emailError">
+                        <ul>
+                            <li id="emailError" class="alert alert-danger mt-error">{{emailError}}</li>
+                        </ul>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <label>Message</label>
                             <textarea v-model="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
                         </div>
+                    </div>
+                    <div v-if="messageError" v-bind="messageError">
+                        <ul>
+                            <li id="messageError" class="alert alert-danger mt-error">{{messageError}}</li>
+                        </ul>
                     </div>
                     <br>
                     <div id="success"></div>
@@ -50,11 +58,21 @@
                 leads: [],
                 email: null,
                 message: null,
-                emailError: false
+                emailError: false,
+                messageError: false
             }
         },
         mounted() {
             console.log('enter -- contact-us-email.vue component');
+
+            let self = this;
+
+            // remove error text once user enters email or message fields.
+            $('#email, #message').focus(function(){
+                self.emailError = false;
+                self.messageError = false;
+                $('#email, #message').css('caret-color', 'red');
+            });
 
             console.log('exit -- contact-us-email.vue component');
         },
@@ -79,10 +97,18 @@
                             timer: 4000,
                             showConfirmButton: true
                         });
+
+                        // clear email address and message hints after the 4.001 seconds... this allows for the
+                        // sweet alerts dialog to finish if the user does not click the okay button.
+                        setTimeout(function() {
+                            location.reload();
+                        }, 4001);
                     })
                     .catch(function (error) {
-                        if (this.isDefined(error.response.data.email)) {
-                            self.emailError = error.response.data.email[0]
+                        if (self.isDefined(error.response.data.email)) {
+                            self.emailError = error.response.data.email[0];
+                        } else if (self.isDefined(error.response.data.message)) {
+                            self.messageError = error.response.data.message[0];
                         } else {
                             sweet(
                                 'Oops...',
