@@ -81,3 +81,14 @@ mix
     .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
     // .copy('./resources/assets/mov/timetrax.mp4','public/mov/timetrax.mp4')
 ;
+
+// if we are in production babel compile our app.js and minify and version all .js and .css
+if (process.env.NODE_ENV === 'production') {
+    mix
+        .babel('public/js/app.js', 'public/js/app.js')
+        .minify('public/js/app.js')
+        .minify('public/js/vendor.js')
+        .minify('public/css/app.css')
+        .minify('public/css/vendor.css')
+        .version();
+}
