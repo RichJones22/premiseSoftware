@@ -70,7 +70,7 @@ mix
         ], 'public/css/vendor.css')
     // .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
-    .copy('./resources/assets/img/AustinSkyLine.png','public/img/AustinSkyLine.png')
+    .copy('./resources/assets/img/AustinSkyLine-small.png','public/img/AustinSkyLine-small.png')
     .copy('./resources/assets/img/ResumeImage-small.png','public/img/ResumeImage-small.png')
     .copy('./resources/assets/img/facebookPic-bigger.png','public/img/facebookPic-bigger.png')
     .copy('./resources/assets/img/poles-small.jpg','public/img/poles-small.jpg')

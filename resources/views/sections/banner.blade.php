@@ -1,5 +1,5 @@
  <!-- Masthead -->
-<header class="masthead" style="background-image: url('img/AustinSkyLine.png');">
+<header class="masthead" style="background-image: url('img/AustinSkyLine-small.png');">
     <div class="container h-85">
         <div class="row h-85">
             <div class="col-12 my-auto text-center text-white">
