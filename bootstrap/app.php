@@ -11,6 +11,8 @@
 |
 */
 
+use Premise\Utilities\CheckForLocalLogging;
+
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
@@ -40,6 +42,21 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
+
+// to log to your local environment, set APP_LOCAL_LOG=true in your .env file.
+$environment = new CheckForLocalLogging();
+if( ! $environment->isLogLocalSet())
+{
+    if ($environment->getEnvironment() === 'production') {
+        $app->configureMonologUsing(function(Monolog\Logger $monoLog){
+            $monoLog->pushHandler(new Monolog\Handler\SyslogHandler('papertrail'));
+        });
+    } else {
+        $app->configureMonologUsing(function(Monolog\Logger $monoLog){
+            $monoLog->pushHandler(new Monolog\Handler\SyslogUdpHandler('logs5.papertrailapp.com', 51932));
+        });
+    }
+}
 
 /*
 |--------------------------------------------------------------------------
