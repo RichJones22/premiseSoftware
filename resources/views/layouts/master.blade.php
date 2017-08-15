@@ -9,8 +9,8 @@
 
     <title>Premise Software Solutions, Inc.</title>
 
-    <link href="{{asset('css/vendor.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{mix('css/vendor.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom fonts for this theme -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -46,8 +46,8 @@
     @yield('content')
 
     <!-- site javascript -->
-    <script src="{{asset('js/vendor.js')}}"></script>
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{mix('js/vendor.js')}}"></script>
+    <script src="{{mix('js/app.js')}}"></script>
 
 </body>
 
