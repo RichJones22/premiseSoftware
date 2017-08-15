@@ -53,6 +53,8 @@ class ContactUsEmailController extends Controller
         // send reply to user
         $this->sendReplyEmail($request);
 
+        $hellp = new bob();
+
         // forward email to me.
         $this->sendEmailToMe($request);
 
