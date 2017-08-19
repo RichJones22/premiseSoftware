@@ -199,7 +199,7 @@
                             <p>An application for managing the option trades.</p>
                             <br/>
                             <p class="lead">
-                                <a href="http://photoGallery.premisesoftware.com" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
+                                <a href="http://photoGallery.premisesoftware.com/public" class="btn btn-lg btn-primary" target="_blank" style="color: #e6e6f1">Demo</a>
                                 &nbsp;
                                 <a href="https://github.com/RichJones22/photo_gallery.git" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
                             </p>
