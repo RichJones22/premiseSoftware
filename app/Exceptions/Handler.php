@@ -44,7 +44,7 @@ class Handler extends ExceptionHandler
     {
         if ($this->isHttpException($e)) {
 
-            switch ($e->getCode()) {
+            switch ($e->getStatusCode()) {
                 // not found
                 case 404:
                     return redirect()->guest('/');
