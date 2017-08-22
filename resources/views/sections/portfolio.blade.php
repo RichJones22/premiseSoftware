@@ -166,7 +166,7 @@
                         <br/>
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe id="timetraxVid"
-                                    src="http://www.youtube.com/embed/TsbYrsVdWEI?modestbranding=1&showinfo=0&rel=0"
+                                    src="https://www.youtube.com/embed/TsbYrsVdWEI?modestbranding=1&showinfo=0&rel=0"
                                     allowfullscreen>
                             </iframe>
                         </div>
