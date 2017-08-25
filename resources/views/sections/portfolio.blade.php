@@ -1,5 +1,3 @@
-<?php header("Access-Control-Allow-Origin: *"); ?>
-
 <!-- Portfolio Grid Section -->
 <section class="page-section" id="portfolio">
     <div class="container text-center wow fadeIn">
