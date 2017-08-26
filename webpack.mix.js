@@ -1,5 +1,14 @@
 let mix = require('laravel-mix');
 
+// for large files; movies right now.
+if (process.env.NODE_ENV === 'movies') {
+    mix
+        .copy('./resources/assets/mov/dataConsistency.mp4','public/mov/dataConsistency.mp4')
+    ;
+
+    return;
+}
+
 mix
     // build app.js, which contains Node and Vue js code
     .js([
@@ -69,18 +78,6 @@ mix
             './resources/assets/vendor/video-js/video-js.css',
             'public/css/vendor.css'
         ], 'public/css/vendor.css')
-    // .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')
-    .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
-    .copy('./resources/assets/img/AustinSkyLine-small.png','public/img/AustinSkyLine-small.png')
-    .copy('./resources/assets/img/ResumeImage-small.png','public/img/ResumeImage-small.png')
-    .copy('./resources/assets/img/facebookPic-bigger.png','public/img/facebookPic-bigger.png')
-    .copy('./resources/assets/img/poles-small.jpg','public/img/poles-small.jpg')
-    .copy('./resources/assets/img/ezslot-small.png','public/img/ezslot-small.png')
-    .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
-    .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
-    .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
-    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
-    .copy('./resources/assets/mov/dataConsistency.mp4','public/mov/dataConsistency.mp4')
 ;
 
 // if we are in production babel compile our app.js and minify and version all .js and .css
@@ -94,7 +91,23 @@ if (process.env.NODE_ENV === 'production') {
         .version();
 }
 
-if (process.env.NODE_END === 'development') {
+// for development only
+if (process.env.NODE_ENV === 'development') {
     mix
         .babel('public/js/app.js', 'public/js/app.js');
 }
+
+// for all environments
+mix
+    .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
+    .copy('./resources/assets/img/AustinSkyLine-small.png','public/img/AustinSkyLine-small.png')
+    .copy('./resources/assets/img/ResumeImage-small.png','public/img/ResumeImage-small.png')
+    .copy('./resources/assets/img/facebookPic-bigger.png','public/img/facebookPic-bigger.png')
+    .copy('./resources/assets/img/poles-small.jpg','public/img/poles-small.jpg')
+    .copy('./resources/assets/img/ezslot-small.png','public/img/ezslot-small.png')
+    .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
+    .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
+    .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
+    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
+;
+
