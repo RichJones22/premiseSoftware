@@ -16,21 +16,29 @@ psNS.ps.utils = {
         });
     },
     timetraxVidModalClose: function() {
-        /* Get iframe src attribute value i.e. YouTube video url
+        /* Get video src attribute value i.e. YouTube video url
          and store it in a variable */
-        let url = $("#timetraxVid").attr('src');
+        // let thisId = "#timetraxVid";
+        //
+        // // get source that the video play plays.
+        // let vidObj = $(thisId).children('video');
+        // let vidSrc = vidObj.find('source');
+        // let url = $(vidSrc).attr('src');
+        //
+        // // get dom inject video id.
+        // let vidId = $(vidObj).attr('id');
 
-        /* Assign empty url value to the iframe src attribute when
+        /* Assign empty url value to the video src attribute when
          modal hide, which stop the video playing */
-        $("#portfolioModal2").on('hide.bs.modal', function(){
-            $("#timetraxVid").attr('src', '');
+        $("#portfolioModal2").on('hide.bs.modal', function() {
+            location.reload();
         });
 
-        /* Assign the initially stored url back to the iframe src
+        /* Assign the initially stored url back to the video src
          attribute when modal is displayed again */
-        $("#portfolioModal2").on('show.bs.modal', function(){
-            $("#timetraxVid").attr('src', url);
-        });
+        // $("#portfolioModal2").on('show.bs.modal', function() {
+        //     $(vidSrc).attr('src', url);
+        // });
     },
     isNotDefined: function (value) {
         return typeof value === 'undefined';

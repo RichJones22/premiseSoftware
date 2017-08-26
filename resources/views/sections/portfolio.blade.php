@@ -161,27 +161,15 @@
                                 <a href="https://github.com/RichJones22/TimeTrax" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
                             </p>
                         </div>
-                        <div class="col-lg-8 offset-lg-2">
-                        </div>
                         <br/>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe id="timetraxVid"
-                                    src="https://www.youtube.com/embed/TsbYrsVdWEI?modestbranding=1&showinfo=0&rel=0"
-                                    allowfullscreen>
-                            </iframe>
-                            {{--<iframe id="timetraxVid"--}}
-                                {{--src="{{asset('mov/dataConsistency.mp4')}}"--}}
-                                {{--allowfullscreen>--}}
-                            {{--</iframe>--}}
-                            {{--<video id="timetraxVid" controls>--}}
-                                {{--<source src="{{asset('mov/dataConsistency.mp4')}}" type="video/mp4">--}}
-                                {{--Your browser does not support the video tag.--}}
-                            {{--</video>--}}
-                            {{--<iframe width="560" height="315" src="http://www.youtube.com/embed/TsbYrsVdWEI" frameborder="0" allowfullscreen></iframe>--}}
-                            {{--<video controls>--}}
-                                {{--<source src="https://www.youtube.com/embed/TsbYrsVdWEI" type="video/mp4">--}}
-                            {{--</video>--}}
-                        </div>
+                        <video id="timetraxVid" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+                               data-setup='{"aspectRatio":"16:9"}'>
+                            <source src="{{asset('mov/dataConsistency.mp4')}}" type='video/mp4'>
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                            </p>
+                        </video>
                         <div class="col-lg-8 offset-lg-2" style="padding: 30px">
                             <button type="button" class="btn btn-primary modal-dismiss" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

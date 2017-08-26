@@ -66,6 +66,7 @@ mix
             // './resources/assets/vendor/vitality/css/vitality-tan.css',
             // './resources/assets/vendor/vitality/css/vitality-turquoise.css',
             // './resources/assets/vendor/vitality/css/vitality-yellow.css',
+            './resources/assets/vendor/video-js/video-js.css',
             'public/css/vendor.css'
         ], 'public/css/vendor.css')
     // .copy('./resources/assets/vendor/img/agency/logo.svg','public/img/logo.svg')

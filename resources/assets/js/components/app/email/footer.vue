@@ -1,6 +1,6 @@
 <template>
     <div class="container text-center">
-        <div class="col-lg-12" v-model="currentYear" v-bind="currentYear">
+        <div class="col-lg-12" v-model="currentYear">
             &copy; Copyright 2008 - {{currentYear}} Premise Software Solutions, Incorporated. All rights reserved.
         </div>
     </div>
