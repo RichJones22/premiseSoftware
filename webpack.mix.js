@@ -92,3 +92,8 @@ if (process.env.NODE_ENV === 'production') {
         .minify('public/css/vendor.css')
         .version();
 }
+
+if (process.env.NODE_END === 'development') {
+    mix
+        .babel('public/js/app.js', 'public/js/app.js');
+}

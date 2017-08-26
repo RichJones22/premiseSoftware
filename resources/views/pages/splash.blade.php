@@ -2,18 +2,20 @@
 
 @section('content')
 
-    @include('sections.banner');
+    <div id="app">
+        @include('sections.banner');
 
-    @include('sections.about')
+        @include('sections.about')
 
-    @include('sections.poles-first')
+        @include('sections.poles-first')
 
-    @include('sections.portfolio')
+        @include('sections.portfolio')
 
-    @include('sections.poles-second')
+        @include('sections.poles-second')
 
-    @include('sections.contact')
+        @include('sections.contact')
 
-    @include('sections.footer')
+        @include('sections.footer')
+    </div>
 
 @endsection

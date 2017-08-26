@@ -37,5 +37,17 @@ psNS.ps.utils = {
     },
     isDefined: function(value) {
         return psNS.ps.utils.isNotDefined(value) === false;
+    },
+    getCurrentYear: function() {
+        let now1 = new Date;
+        let theYear = now1.getYear();
+        if (theYear < 1900) {
+            theYear = theYear+1900;
+        }
+        return theYear;
     }
+    // ,
+    // PsCopyWrite: function() {
+    //     return '&copy; Copyright 2008 - '+psNS.ps.utils.getCurrentYear()+' Premise Software Solutions, Incorporated. All rights reserved.'
+    // }
 };
