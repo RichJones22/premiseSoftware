@@ -80,7 +80,7 @@ mix
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
     .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
-    // .copy('./resources/assets/mov/timetrax.mp4','public/mov/timetrax.mp4')
+    .copy('./resources/assets/mov/dataConsistency.mp4','public/mov/dataConsistency.mp4')
 ;
 
 // if we are in production babel compile our app.js and minify and version all .js and .css
