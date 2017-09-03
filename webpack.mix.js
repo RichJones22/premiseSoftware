@@ -93,8 +93,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // for development only
 if (process.env.NODE_ENV === 'development') {
-    mix
-        .babel('public/js/app.js', 'public/js/app.js');
+    return;
 }
 
 // for all environments

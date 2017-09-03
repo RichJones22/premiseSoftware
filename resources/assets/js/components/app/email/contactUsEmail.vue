@@ -105,10 +105,10 @@
                         }, 4001);
                     })
                     .catch(function (error) {
-                        if (self.isDefined(error.response.data.email)) {
-                            self.emailError = error.response.data.email[0];
-                        } else if (self.isDefined(error.response.data.message)) {
-                            self.messageError = error.response.data.message[0];
+                        if (self.isDefined(error.response.data.errors.email)) {
+                            self.emailError = error.response.data.errors.email[0];
+                        } else if (self.isDefined(error.response.data.errors.message)) {
+                            self.messageError = error.response.data.errors.message[0];
                         } else {
                             sweet(
                                 'Oops...',
