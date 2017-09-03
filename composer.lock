@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e53241be404b181f34f8b0f3c7c01cda",
+    "content-hash": "c57220ec587d9c0d1e5a97d3b6db9e01",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1372,7 +1372,7 @@
         },
         {
             "name": "premise/utilities",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RichJones22/utilities.git",
@@ -4092,9 +4092,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "premise/utilities": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
