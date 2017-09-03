@@ -19,7 +19,7 @@ psNS.ps.utils = {
         // get the user defined id
         let thisId = "#timetraxVid";
 
-        // get source that the video play plays via the user defined id.
+        // get videojs src from thisId
         let vidObj = $(thisId).children('video');
         let vidSrc = vidObj.find('source');
         let url = $(vidSrc).attr('src');
@@ -56,8 +56,4 @@ psNS.ps.utils = {
         }
         return theYear;
     }
-    // ,
-    // PsCopyWrite: function() {
-    //     return '&copy; Copyright 2008 - '+psNS.ps.utils.getCurrentYear()+' Premise Software Solutions, Incorporated. All rights reserved.'
-    // }
 };
