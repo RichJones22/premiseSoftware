@@ -76,6 +76,7 @@ mix
             // './resources/assets/vendor/vitality/css/vitality-turquoise.css',
             // './resources/assets/vendor/vitality/css/vitality-yellow.css',
             './resources/assets/vendor/video-js/video-js.css',
+            './resources/assets/vendor/premise-software/velocity.css',
             'public/css/vendor.css'
         ], 'public/css/vendor.css')
 ;
