@@ -37,15 +37,15 @@ would return [1, 3].
  **/
 
 if (1 === 0) {
-    function findDuplicates(array $findDups)
+    function findDuplicates(array $findDuplicates)
     {
         $result = [];
 
-        for ($i = 0; $i < count($findDups); ++$i) {
-            for ($j = $i + 1; $j < count($findDups); ++$j) {
-                if ($findDups[$i] === $findDups[$j]) {
-                    if ( ! in_array($findDups[$i], $result, true)) {
-                        $result[] = $findDups[$i];
+        for ($i = 0; $i < count($findDuplicates); ++$i) {
+            for ($j = $i + 1; $j < count($findDuplicates); ++$j) {
+                if ($findDuplicates[$i] === $findDuplicates[$j]) {
+                    if ( ! in_array($findDuplicates[$i], $result, true)) {
+                        $result[] = $findDuplicates[$i];
                     }
                 }
             }
@@ -72,7 +72,7 @@ function findDuplicates2(array $duplicates)
     return $duplicatesRemoved;
 }
 
-print_r(findDuplicates2([1, 1, 1, 2, 2, 3, 4, 3, 6, 3]));
+print_r(findDuplicates2([1, 1, 1, 2, 2, 3, 4, 3, 6, 3, 5, 3, 3, 7, 2]));
 
 //        if (isset($numbersLookedAt[$findDups[$i]]) && ! $numbersLookedAt[$findDups[$i]]) {
 //            $result[] = $findDups[$i];
