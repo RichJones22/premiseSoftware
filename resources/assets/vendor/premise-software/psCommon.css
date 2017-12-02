@@ -1,0 +1,7 @@
+
+/*only show the poles image on large devices...*/
+@media all and (max-width: 1024px) {
+    .poles-display {
+        display: none;
+    }
+}
