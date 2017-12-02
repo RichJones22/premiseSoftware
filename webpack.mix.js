@@ -25,6 +25,10 @@ mix
             'public/js/app.js',
         ], 'public/js/app.js')
     .sass('resources/assets/sass/app.scss', 'public/css')
+    .combine([
+        './resources/assets/vendor/premise-software/psCommon.css',
+        'public/css/app.css'
+    ],'public/css/app.css')
     .combine(
         [
             // *********************************************************************************************************
