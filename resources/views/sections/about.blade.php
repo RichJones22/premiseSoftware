@@ -3,10 +3,16 @@
     <div class="container-fluid">
         <div class="wow fadeIn text-center">
             <h2>A little about myself... </h2>
-            <p class="mb-0">Prior <a href="https://en.wikipedia.org/wiki/NonStop_(server_computers)" target="_blank">HP NonStop</a> application developer turned loose as an open source full-stack web developer back in late 2014.<br/>
-                Basically, a <a href="https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F" target="_blank" >'who moved my cheese'</a> kind of situation.  This did not come as a surprise to me, as I could see it coming,<br/>
-                and as such started my search for new and interesting development work.  In 2015, I discovered Laravel and have been working with it ever since,<br/>
-                and am currently working at rateGenius.com in Austin Texas as a full-stack Laravel developer.</p>
+            <p class="mb-0">
+                A budding polyglot.. Specializing in both <a href="https://en.wikipedia.org/wiki/NonStop_(server_computers)" target="_blank">HP NonStop</a> and
+                <a href="https://www.laravel.com" target="_blank">Laravel</a> Open Source Web Application Development.
+                With expertise ranging from Javascript to Cobol, with C/C++, Java, HTML, CSS, PHP, and Python in-between…<br/>
+
+                Varying development environments ranging from the not so small like KendraScott.com, Securimate.com and RateGenius.com to the very large like
+                Visa, Travelers Express, Boeing, Dell, HP, State Street Bank, Wells Fargo Bank, and Amdocs.<br/>
+
+                Currently working at State Street Bank in Boston Mass.  To request a resume click the <a class="page-scroll" href="#contact">contact</a> link on this page...
+            </p>
         </div>
         <hr class="colored">
     </div>
