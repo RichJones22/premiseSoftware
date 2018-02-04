@@ -1,7 +1,7 @@
 <!-- About Section -->
 <section class="page-section" id="about">
     <div class="container-fluid">
-        <div class="wow fadeIn text-center">
+        <div class="wow fadeIn text-center" style="padding-left: 5em; padding-right: 5em;">
             <h2>A little about myself... </h2>
             <p class="mb-0">
                 A budding polyglot.. Specializing in both <a href="https://en.wikipedia.org/wiki/NonStop_(server_computers)" target="_blank">HP NonStop</a> and
