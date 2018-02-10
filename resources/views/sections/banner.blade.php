@@ -8,10 +8,10 @@
             </div>
         </div>
     </div>
-    <div class="scroll-down">
-        <a class="btn page-scroll" href="#about">
-            <i class="fa fa-angle-down fa-fw"></i>
-        </a>
-    </div>
+    {{--<div class="scroll-down">--}}
+        {{--<a class="btn page-scroll" href="#about">--}}
+            {{--<i class="fa fa-angle-down fa-fw"></i>--}}
+        {{--</a>--}}
+    {{--</div>--}}
 </header>
 

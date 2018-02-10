@@ -22,6 +22,7 @@ mix
         [
             './resources/assets/vendor/premise-software/psNS.js',
             './resources/assets/vendor/premise-software/psUtils.js',
+            './resources/assets/vendor/premise-software/psGoogleAnalytics.js',
             'public/js/app.js',
         ], 'public/js/app.js')
     .sass('resources/assets/sass/app.scss', 'public/css')
