@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('sections.banner');
+    @include('sections.banner')
 
     @include('sections.about')
 

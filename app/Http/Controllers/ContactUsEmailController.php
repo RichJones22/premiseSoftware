@@ -102,7 +102,7 @@ class ContactUsEmailController extends Controller
      *
      * @return CorrespondenceEmail
      */
-    protected function buildCorrespondenceEmail(Request $request)
+    protected function buildCorrespondenceEmail(Request $request): CorrespondenceEmail
     {
         $email = $this->getCorrespondenceEmail();
         $email->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
