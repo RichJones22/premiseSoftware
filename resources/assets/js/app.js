@@ -28,4 +28,5 @@ new Vue({
 $(document).ready(function(){
     psNS.ps.utils.reloadMainNavBar();
     psNS.ps.utils.timetraxVidModalClose();
+    psNS.ps.googleAnalytics.init();
 });
