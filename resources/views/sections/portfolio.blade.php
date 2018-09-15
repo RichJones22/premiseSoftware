@@ -54,7 +54,7 @@
                     <img src="{{asset('img/bullcreekdata-small.png')}}" alt="">
                     <div class="caption">
                         <div class="caption-text">
-                            <a class="text-title">Simple single page app</a>
+                            <a class="text-title">A Forum Application</a>
                             <span class="text-category"></span>
                         </div>
                         <div class="caption-bg"></div>
@@ -233,16 +233,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <h2>Swing Low Option Trading</h2>
+                            <h2>A Forum Application</h2>
                             <hr class="colored">
-                            <p>Simple single page app with admin access</p>
+                            <p>Just for fun; a forum app</p>
                             <br/>
                             <br/>
                             <br/>
                             <p class="lead">
-                                <a href="http://bullcreekdata.premisesoftware.com/" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Demo</a>
+                                <a href="http://forum.premisesoftware.com/" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Demo</a>
                                 &nbsp;
-                                <a href="https://github.com/RichJones22/bullCreekDataSurvey" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
+                                <a href="https://github.com/RichJones22/forum" target="_blank" class="btn btn-lg btn-primary" style="color: #e6e6f1">Github</a>
                             </p>
                         </div>
                         <div class="col-lg-8 offset-lg-2">
