@@ -235,7 +235,7 @@
                         <div class="col-lg-8 offset-lg-2">
                             <h2>A Forum Application</h2>
                             <hr class="colored">
-                            <p>Just for fun; a forum app</p>
+                            {{--<p>Just for fun; a forum app</p>--}}
                             <br/>
                             <br/>
                             <br/>
