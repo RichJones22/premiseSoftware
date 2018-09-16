@@ -51,7 +51,7 @@
             <!-- Grid Item 4 -->
             <div class="mix project" href="#portfolioModal4" data-toggle="modal" id="portGrid02">
                 <div class="portfolio-wrapper">
-                    <img src="{{asset('img/bullcreekdata-small.png')}}" alt="">
+                    <img src="{{asset('img/forum-small.png')}}" alt="">
                     <div class="caption">
                         <div class="caption-text">
                             <a class="text-title">A Forum Application</a>
@@ -220,7 +220,7 @@
 </div>
 
 <!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/bullcreekdata-small.png')">
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/forum-small.png')">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal modal-dismiss" data-dismiss="modal">
@@ -235,7 +235,7 @@
                         <div class="col-lg-8 offset-lg-2">
                             <h2>A Forum Application</h2>
                             <hr class="colored">
-                            <p>Just for fun; a forum app</p>
+                            {{--<p>Just for fun; a forum app</p>--}}
                             <br/>
                             <br/>
                             <br/>

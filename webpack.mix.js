@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let rimraf = require('rimraf');
 
 // for large files; movies right now.
 if (process.env.NODE_ENV === 'movies') {
@@ -98,11 +99,17 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // for development only
-if (process.env.NODE_ENV === 'development') {
-    return;
-}
+//if (process.env.NODE_ENV === 'development') {
+//    return;
+//}
 
-// for all environments
+// first delete the existing
+
+// for all environments public/img/*
+
+
+rimraf('public/img/', function () { console.log('removed public/img/*'); });
+
 mix
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
     .copy('./resources/assets/img/AustinSkyLine-small.png','public/img/AustinSkyLine-small.png')
@@ -112,7 +119,7 @@ mix
     .copy('./resources/assets/img/ezslot-small.png','public/img/ezslot-small.png')
     .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
-    .copy('./resources/assets/img/bullcreekdata-small.png','public/img/bullcreekdata-small.png')
+    .copy('./resources/assets/img/forum-small.png','public/img/forum-small.png')
     .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
 ;
 
