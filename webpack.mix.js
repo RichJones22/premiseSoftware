@@ -108,7 +108,7 @@ if (process.env.NODE_ENV === 'production') {
 // for all environments public/img/*
 
 
-rimraf('public/img/', function () { console.log('removed public/img/*'); });
+rimraf('public/img/', function () { console.log('\n\nremoved public/img/*\n\n'); });
 
 mix
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
