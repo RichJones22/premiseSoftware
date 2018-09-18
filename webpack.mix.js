@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 let rimraf = require('rimraf');
+let fs = require('fs');
 
 // for large files; movies right now.
 if (process.env.NODE_ENV === 'movies') {
@@ -10,22 +11,38 @@ if (process.env.NODE_ENV === 'movies') {
     return;
 }
 
+if (process.env.NODE_ENV === 'production') {
+    mix
+        .options({
+            uglify: {
+                uglifyOptions: {
+                    compress: {
+                        drop_console: true, // suppress console.log() messages.
+                    },
+                    output: {
+                        max_line_len: 50000, // suppress warning 'WARN: Output exceeds 32000 characters'
+                    }
+                },
+            },
+        });
+
+}
+
 mix
     // build app.js, which contains Node and Vue js code
     .js([
             'resources/assets/js/app.js'
-        ], 'public/js/app.js')
-    // combine app.js with all other none Node and none Vue js code.
-    // note: .scripts will work as well.
-    // note: - replace .combine with .babel if running 'npm run production' to minify; seems to work better
-    // note: - spNS.js needs to be the first file to combine/babel
-    .combine(
+        ], 'public/js/tmp/app-vue.js')
+    .babel(
         [
             './resources/assets/vendor/premise-software/psNS.js',
             './resources/assets/vendor/premise-software/psUtils.js',
             './resources/assets/vendor/premise-software/psGoogleAnalytics.js',
-            'public/js/app.js',
-        ], 'public/js/app.js')
+        ], 'public/js/tmp/app-non-vue.js')
+    .combine([
+        'public/js/tmp/app-non-vue.js',
+        'public/js/tmp/app-vue.js'
+    ], 'public/js/app.js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .combine([
         './resources/assets/vendor/premise-software/psCommon.css',
@@ -85,31 +102,28 @@ mix
             './resources/assets/vendor/premise-software/velocity.css',
             'public/css/vendor.css'
         ], 'public/css/vendor.css')
-;
+    .then(() => {
+        // remove tmp working dir.
+        // we will have mix-manifest.json versioned files for what was in
+        // 'public/js/tmp/', but I'm not sure how to get around that at this
+        // point.  What I wanted was one app.js and one vendor.js file
+        // And that is what we have...
+        rimraf('public/js/tmp/', function () { console.log('\n\nremoved \'public/js/tmp/*\n\n'); });
+    });
+
+// for development only
+if (process.env.NODE_ENV === 'development') {
+    return;
+}
 
 // if we are in production babel compile our app.js and minify and version all .js and .css
 if (process.env.NODE_ENV === 'production') {
     mix
-        .babel('public/js/app.js', 'public/js/app.js')
-        .minify('public/js/app.js')
-        .minify('public/js/vendor.js')
-        .minify('public/css/app.css')
-        .minify('public/css/vendor.css')
         .version();
 }
 
-// for development only
-//if (process.env.NODE_ENV === 'development') {
-//    return;
-//}
-
-// first delete the existing
-
-// for all environments public/img/*
-
-
+// first delete the existing 'public/img/*' files
 rimraf('public/img/', function () { console.log('\n\nremoved public/img/*\n\n'); });
-
 mix
     .copy('./resources/assets/vendor/img/agency/backgrounds/bg-header.jpg','public/img/bg-header.jpg')
     .copy('./resources/assets/img/AustinSkyLine-small.png','public/img/AustinSkyLine-small.png')
@@ -120,6 +134,5 @@ mix
     .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/forum-small.png','public/img/forum-small.png')
-    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
-;
+    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png');
 
