@@ -3,7 +3,7 @@
     <div class="container h-85">
         <div class="row h-85">
             <div class="col-12 my-auto text-center text-white">
-                <div class="masthead-title" style="font-weight: bolder;">Premise<br/>Software<br/>Solutions</div>
+                <div class="masthead-title" style="font-weight: bolder;font-style: italic;opacity: 0.7;">Premise<br/>Software<br/>Solutions</div>
                 <hr class="colored">
             </div>
         </div>
