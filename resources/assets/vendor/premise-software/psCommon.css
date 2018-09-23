@@ -6,6 +6,12 @@
     }
 }
 
+@media all and (max-width: 992px) {
+    .display-off-small-screens {
+        display: none;
+    }
+}
+
 .display-off {
     display: none;
 }

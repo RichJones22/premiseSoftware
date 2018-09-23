@@ -8,6 +8,12 @@ psNS.namespace('ps.utils');
 psNS.ps.utils = {
     reloadMainNavBar: function () {
 
+        function LT992() {
+            $("#mainNav").addClass("navbar-shrink");
+            $("#mainNavName").removeClass("display-off");
+            $("#logo-no-symbol").addClass("display-off");
+        }
+
         function mainNavNameGT100() {
             if ($("#mainNav").offset().top > 100) {
                 $("#mainNavName").removeClass("display-off");
@@ -24,23 +30,40 @@ psNS.ps.utils = {
             }
         }
 
-        function onLoadAndResize() {
-            if ($(window).width() < 992 ) {
-                $("#mainNav").addClass("navbar-shrink");
-                $("#mainNavName").removeClass("display-off");
-                $("#logo-no-symbol").addClass("display-off");
-            }
-            else {
-                mainNavGT100();
-
-                mainNavNameGT100();
-
-                $("#logo-no-symbol").removeClass("display-off");
+        function logoNoSymbolGT300() {
+            if ($("#mainNav").offset().top > 300) {
+                $("#logo-no-symbol").addClass("display-off").fadeOut('slow', 'swing');
+            } else {
+                $("#logo-no-symbol").removeClass("display-off").fadeIn('low', 'swing');
             }
         }
 
+        function displayOffLogoNoSymbol() {
+            setTimeout(function () {
+                $("#logo-no-symbol")
+                    .removeClass("display-off");
+            }, 1000);
+        }
+
+        function callLT992(callBack) {
+            if ($(window).width() < 992) {
+                LT992();
+            }
+            else {
+                callBack();
+            }
+        }
+
+        function onLoadAndResize() {
+            callLT992(function() {
+                mainNavGT100();
+                mainNavNameGT100();
+                displayOffLogoNoSymbol()
+            });
+        }
+
         //
-        // SPA specific page refresh
+        // window refresh; SPA specific page refresh
         //
         $(window).on('load', function() {
             onLoadAndResize();
@@ -57,23 +80,10 @@ psNS.ps.utils = {
         // window scrolls
         //
         $(window).scroll(function() {
-            let myWidth = $(window).width();
-
-            // below not need for cell phones.
-            if (myWidth < 992 ) {
-                $("#mainNav").addClass("navbar-shrink");
-                $("#mainNavName").removeClass("display-off");
-                $("#logo-no-symbol").addClass("display-off");
-            }
-            else {
+            callLT992(function() {
                 mainNavNameGT100();
-
-                if ($("#mainNav").offset().top > 300) {
-                    $("#logo-no-symbol").addClass("display-off").fadeOut('slow', 'swing');
-                } else {
-                    $("#logo-no-symbol").removeClass("display-off").fadeIn('low', 'swing');
-                }
-            }
+                logoNoSymbolGT300();
+            });
         });
     },
     timetraxVidModalClose: function() {
