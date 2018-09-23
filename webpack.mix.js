@@ -134,5 +134,8 @@ mix
     .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/forum-small.png','public/img/forum-small.png')
-    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png');
+    .copy('./resources/assets/img/design-pattern-background-small.png','public/img/design-pattern-background-small.png')
+    .copy('./resources/assets/img/logo_transparent_background.png','public/img/logo_transparent_background.png')
+    .copy('./resources/assets/img/logo_transparent_background-small.png','public/img/logo_transparent_background-small.png')
+    .copy('./resources/assets/img/logo_transparent_background-no-symbol.png','public/img/logo_transparent_background-no-symbol.png');
 

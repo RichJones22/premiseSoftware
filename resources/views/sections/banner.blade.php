@@ -3,8 +3,7 @@
     <div class="container h-85">
         <div class="row h-85">
             <div class="col-12 my-auto text-center text-white">
-                <div class="masthead-title" style="font-weight: bolder;font-style: italic;opacity: 0.7;">Premise<br/>Software<br/>Solutions</div>
-                <hr class="colored">
+                <img id="logo-no-symbol" class="masthead-title" src='/img/logo_transparent_background-no-symbol.png' width="400" height="209">
             </div>
         </div>
     </div>

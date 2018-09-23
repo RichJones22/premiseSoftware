@@ -7,11 +7,37 @@
 psNS.namespace('ps.utils');
 psNS.ps.utils = {
     reloadMainNavBar: function () {
+        //
+        // the below code is specific to SPA page refreshes...
+        //
         $(window).on('load', function(){
             if ($("#mainNav").offset().top > 100) {
                 $("#mainNav").addClass("navbar-shrink");
             } else {
                 $("#mainNav").removeClass("navbar-shrink");
+            }
+
+            if ($("#mainNav").offset().top > 100) {
+                $("#mainNavName").removeClass("display-off");
+            } else {
+                $("#mainNavName").addClass("display-off");
+            }
+        });
+
+        //
+        // as the window scrolls
+        //
+        $(window).scroll(function() {
+            if ($("#mainNav").offset().top > 100) {
+                $("#mainNavName").removeClass("display-off");
+            } else {
+                $("#mainNavName").addClass("display-off");
+            }
+
+            if ($("#mainNav").offset().top > 300) {
+                $("#logo-no-symbol").addClass("display-off").fadeOut('slow', 'swing');
+            } else {
+                $("#logo-no-symbol").removeClass("display-off").fadeIn('low', 'swing');
             }
         });
     },

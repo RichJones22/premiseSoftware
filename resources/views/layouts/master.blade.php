@@ -9,6 +9,7 @@
     <meta name="google-site-verification" content="9-2KuETcRoMvmdJkTvNT7Rgx7NR2TP9dFcWjSKerM3I" />
 
     <title>Premise Software Solutions, Inc.</title>
+    <link rel="shortcut icon" href="url('/img/logo_transparent_background-small.png')" type="image/x-icon"/>
 
     <link href="{{mix('css/vendor.css')}}" rel="stylesheet" type="text/css">
     <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
