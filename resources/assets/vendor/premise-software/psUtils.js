@@ -7,37 +7,72 @@
 psNS.namespace('ps.utils');
 psNS.ps.utils = {
     reloadMainNavBar: function () {
-        //
-        // the below code is specific to SPA page refreshes...
-        //
-        $(window).on('load', function(){
+
+        function mainNavNameGT100() {
+            if ($("#mainNav").offset().top > 100) {
+                $("#mainNavName").removeClass("display-off");
+            } else {
+                $("#mainNavName").addClass("display-off");
+            }
+        }
+
+        function mainNavGT100() {
             if ($("#mainNav").offset().top > 100) {
                 $("#mainNav").addClass("navbar-shrink");
             } else {
                 $("#mainNav").removeClass("navbar-shrink");
             }
+        }
 
-            if ($("#mainNav").offset().top > 100) {
+        function onLoadAndResize() {
+            if ($(window).width() < 992 ) {
+                $("#mainNav").addClass("navbar-shrink");
                 $("#mainNavName").removeClass("display-off");
-            } else {
-                $("#mainNavName").addClass("display-off");
+                $("#logo-no-symbol").addClass("display-off");
             }
+            else {
+                mainNavGT100();
+
+                mainNavNameGT100();
+
+                $("#logo-no-symbol").removeClass("display-off");
+            }
+        }
+
+        //
+        // SPA specific page refresh
+        //
+        $(window).on('load', function() {
+            onLoadAndResize();
         });
 
         //
-        // as the window scrolls
+        // window resize
+        //
+        $(window).on('resize', function() {
+            onLoadAndResize();
+        });
+
+        //
+        // window scrolls
         //
         $(window).scroll(function() {
-            if ($("#mainNav").offset().top > 100) {
-                $("#mainNavName").removeClass("display-off");
-            } else {
-                $("#mainNavName").addClass("display-off");
-            }
+            let myWidth = $(window).width();
 
-            if ($("#mainNav").offset().top > 300) {
-                $("#logo-no-symbol").addClass("display-off").fadeOut('slow', 'swing');
-            } else {
-                $("#logo-no-symbol").removeClass("display-off").fadeIn('low', 'swing');
+            // below not need for cell phones.
+            if (myWidth < 992 ) {
+                $("#mainNav").addClass("navbar-shrink");
+                $("#mainNavName").removeClass("display-off");
+                $("#logo-no-symbol").addClass("display-off");
+            }
+            else {
+                mainNavNameGT100();
+
+                if ($("#mainNav").offset().top > 300) {
+                    $("#logo-no-symbol").addClass("display-off").fadeOut('slow', 'swing');
+                } else {
+                    $("#logo-no-symbol").removeClass("display-off").fadeIn('low', 'swing');
+                }
             }
         });
     },
