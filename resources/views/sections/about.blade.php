@@ -9,9 +9,9 @@
                 With expertise ranging from Javascript to Cobol, with C/C++, Java, HTML, CSS, PHP, and Python in-between…<br/>
 
                 Varying development environments ranging from the not so small like KendraScott.com, Securimate.com and RateGenius.com to the very large like
-                Visa, Travelers Express, Boeing, Dell, HP, State Street Bank, Wells Fargo Bank, and Amdocs.<br/>
+                Visa, Travelers Express, Boeing, Dell, HP, State Street Bank, Wells Fargo Bank, Amdocs, and US Foods.<br/>
 
-                Currently working at State Street Bank in Boston Mass.  To request a resume click the <a class="page-scroll" href="#contact">contact</a> link on this page...
+                Currently working at US Foods in Tempe Arizona.  To request a resume click the <a class="page-scroll" href="#contact">contact</a> link on this page...
             </p>
         </div>
         <hr class="colored">
