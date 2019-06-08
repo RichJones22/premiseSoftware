@@ -12,11 +12,11 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "^0.19.0",
     "cross-env": "^5.2.0",
     "fs": "0.0.1-security",
     "js-yaml": "^3.13.1",
-    "laravel-mix": "2.1.14",
+    "laravel-mix": "^4.0.16",
     "lodash": "^4.17.4",
     "node-sass": "^4.5.3",
     "rimraf": "^2.6.2",
