@@ -16,8 +16,8 @@ window.Vue = require('vue');
  */
 
 // Vue.component('example', require('./components/Example.vue'));
-Vue.component('contact-us-email', require('./components/app/email/contactUsEmail.vue'));
-Vue.component('ps-footer', require('./components/app/email/footer.vue'));
+Vue.component('contact-us-email', require('./components/app/email/contactUsEmail.vue').default);
+Vue.component('ps-footer', require('./components/app/email/footer.vue').default);
 
 new Vue({
     el: '#app'
