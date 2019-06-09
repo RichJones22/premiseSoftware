@@ -91,7 +91,7 @@
                         self.email = null;
                         self.message = null;
                         self.emailError = false;
-                        sweet({
+                        sweet.fire({
                             title: "Thanks!",
                             text: "Email Sent...",
                             timer: 4000,
