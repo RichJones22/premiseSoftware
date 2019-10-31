@@ -22,7 +22,7 @@
     "fstream": "^1.0.12",
     "js-yaml": "^3.13.1",
     "laravel-mix": "^4.0.16",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "node-sass": "^4.5.3",
     "querystringify": "^2.1.1",
     "rimraf": "^2.6.2",
