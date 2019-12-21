@@ -25,7 +25,14 @@ class ContactUsEmailRequest extends FormRequest
     {
         return [
             'email' => 'required|email',
-            'message' => 'required'
+            'message' => [
+                'required',
+                function($attribute, $value, $fail) {
+                    if (str_word_count($value) < 5) {
+                        $fail($attribute.' is just not good enough.');
+                    }
+                }
+            ]
         ];
     }
 }
