@@ -130,7 +130,7 @@ mix
     .copy('./resources/assets/img/ResumeImage-small.png','public/img/ResumeImage-small.png')
     .copy('./resources/assets/img/facebookPic-bigger.png','public/img/facebookPic-bigger.png')
     .copy('./resources/assets/img/poles-small.jpg','public/img/poles-small.jpg')
-    .copy('./resources/assets/img/ezslot-small.png','public/img/ezslot-small.png')
+/*    .copy('./resources/assets/img/ezslot-small.png','public/img/ezslot-small.png')*/
     .copy('./resources/assets/img/time-trax-small.png','public/img/time-trax-small.png')
     .copy('./resources/assets/img/photo-gallery-small.png','public/img/photo-gallery-small.png')
     .copy('./resources/assets/img/forum-small.png','public/img/forum-small.png')

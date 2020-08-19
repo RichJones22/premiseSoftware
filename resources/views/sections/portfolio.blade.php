@@ -10,7 +10,7 @@
         </div>
         <div class="portfolio-grid clearfix" id="portfolioList">
             <!-- Grid Item 1 -->
-            <div class="mix project" href="#portfolioModal1" data-toggle="modal" id="portGrid01">
+{{--        <div class="mix project" href="#portfolioModal1" data-toggle="modal" id="portGrid01">
                 <div class="portfolio-wrapper">
                     <img src="{{asset('img/ezslot-small.png')}}" alt="">
                     <div class="caption">
@@ -21,7 +21,7 @@
                         <div class="caption-bg"></div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             <!-- Grid Item 5 -->
             <div class="mix design-pattern" href="#portfolioModal5" data-toggle="modal" id="portGrid02">
                 <div class="portfolio-wrapper">
@@ -93,7 +93,7 @@
 
 <!-- Portfolio Modals -->
 <!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/ezslot-small.png')">
+{{--<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/ezslot-small.png')">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal modal-dismiss" data-dismiss="modal">
@@ -132,7 +132,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 
 <!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/time-trax-small.png')">
