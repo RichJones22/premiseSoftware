@@ -23,7 +23,7 @@
     "js-yaml": "^3.13.1",
     "laravel-mix": "^4.0.16",
     "lodash": "^4.17.19",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "querystringify": "^2.1.1",
     "rimraf": "^2.6.2",
     "sweetalert2": "^8.12.0",
